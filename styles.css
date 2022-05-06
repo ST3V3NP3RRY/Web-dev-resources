@@ -5,29 +5,89 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #111;
 }
+/* header */
+
 header {
-    background-color: aqua;
+    height: 12em;
+    background-image: url(images/Information-technology-big-data-collection-complex.jpeg);
+    background-image: linear-gradient(45deg, rgba(38, 100, 33. 0.3), rgba(38, 33, 33. 0.3));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
+
+h1 {
+    color: white;
+    text-shadow: 5px 5px 10px #111;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+ p {
+     color: white;
+     text-shadow: 5px 5px 10px #111;
+    font-size: 1.5rem;
+ }
+
+
+
+/* navigation */
 nav ul {
     display: flex;
-
+    justify-content: center;
+    background-color: #01d0ff;
 }
 nav li {
-    padding: 1.5em;
+    padding: 1em;
+    list-style-type: none;
 }
 nav li a {
     text-decoration: none;
+    color: white;
 }
+
+nav li:hover {
+   background-color: #6edbf4;
+   color: #111;
+   transition: 100ms;
+}
+
+
+/* video scroll bars */
+
+.video_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video_logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: -15% 0%;
+}
+
+.video_logo > img:nth-last-of-type(2) {
+    object-position: 0% 0%;
+}
+
 .videos_container {
     background-image: linear-gradient(180deg, #e34c26, #111);
+    
 }
 .css_back_color {
     background-image: linear-gradient(180deg, #2965f1,#111);
+    
 }
 .js_back_color {
     background-image: linear-gradient(180deg, #f0db4f,#111);
+    
 }
 
 .row_video {
@@ -42,10 +102,11 @@ nav li a {
     object-fit: contain;
     max-height: 150px;
     margin: 0 10px;
-    transition: transform 450ms;    
+    transition: transform 450ms;  
 }
 iframe {
     border-radius: 1em;
+    
 }
 .video_file:hover {
     transform: scale(1.1);
@@ -54,5 +115,37 @@ h2 {
     color: white;
     margin: 0.5em 1em 0.5em 1em;
 }
+
+/* Additional resources secttion */
+
+.resource_container { 
+    background-color: #01d0ff;
+    text-align: center;
+    margin-top: .5em;
+}
+.resource_links ul{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.resource_links li {
+    list-style-type: none;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em 0 1em;
+    border-radius: .5em;
+    width: 40%;
+}
+
+.resource_links li a{
+    text-decoration: none;
+}
+
+h3 {
+    padding-top: 1em;
+}
+
 
 
